@@ -27,3 +27,8 @@ penguins_female <- subset(penguins, sex == "female")
 
 #save the female penguins as a dataset 
 write_tsv(penguins_female, "results/1_penguin_female_only.txt")
+
+
+
+penguins_male <- subset(penguins, sex == "male")
+write_tsv(penguins_male, "results/1_penguin_male_only.txt")
